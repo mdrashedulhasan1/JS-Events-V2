@@ -13,6 +13,10 @@
     <button onclick="document.body.style.backgroundColor = 'red'">Click For Red</button>
     <button onclick="yellowStyle()">Click For Yellow</button>
     <button id="gold-color">Click For Gold</button>
+    <button id="cyan-color">Click For Cyan</button>
+    <button id="pink-color">Click For Pink</button>
+    <button id="blue-color">Click For Blue</button>
+    <button id="lightsalmon-color">Click For LightSalmon</button>
     <script>
         function yellowStyle(){
             document.body.style.backgroundColor = 'yellow';
@@ -23,6 +27,28 @@
         function goldStyle(){
             document.body.style.backgroundColor = 'gold';
         }
+
+        const cyanBtn = document.getElementById('cyan-color');
+        cyanBtn.addEventListener('click', cyanStyle);
+        function cyanStyle(){
+            document.body.style.backgroundColor = 'cyan';
+        }
+
+        const pinkBtn = document.getElementById('pink-color');
+        pinkBtn.addEventListener('click', function pinkStyle(){
+            document.body.style.backgroundColor = 'pink';
+        });
+
+        const blueBtn = document.getElementById('blue-color');
+        blueBtn.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'blue';
+        });
+
+        document.getElementById('lightsalmon-color').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'lightSalmon';
+        });
+        
+        
     </script>
     
 </body>
