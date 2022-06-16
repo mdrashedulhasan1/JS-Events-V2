@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Welcome Events World!')">Click For Start</button>
+    <button onclick="console.log(3)">Click For Value</button>
+    <button onclick="console.log('Rashedul Hasan')">My Name</button>
+    <button onclick="document.body.style.backgroundColor = 'red'">Click For Red</button>
+    <button onclick="yellowStyle()">Click For Yellow</button>
+    <button id="gold-color">Click For Gold</button>
+    <script>
+        function yellowStyle(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+
+        const goldColor = document.getElementById('gold-color');
+        goldColor.onclick = goldStyle;
+        function goldStyle(){
+            document.body.style.backgroundColor = 'gold';
+        }
+    </script>
+    
+</body>
+</html>
